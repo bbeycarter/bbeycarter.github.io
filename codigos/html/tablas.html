@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tablas en html y css</title>
+<link href="../css/style_page.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Tablas en html</h1>
+</header>
+<nav>
+	<ol id="menu">
+		<li class="menu_li"><a href="../../index.html" class="menu_a">Inicio</a></li>
+		<li class="menu_li"><a href="formatos_texto.html" class="menu_a">Formatos texto</a></li>
+		<li class="menu_li"><a href="Listas.html" class="menu_a">Listas</a></li>
+		<li class="menu_li"><a href="enlaces.html" class="menu_a">Enlaces</a></li>
+		<li class="menu_li"><a href="tablas.html" class="menu_a">Tablas</a></li>
+		<li class="menu_li"><a href="imagenes.html" class="menu_a">Imágenes</a></li>
+		<li class="menu_li"><a href="audio.html" class="menu_a">Audio</a></li>
+		<li class="menu_li"><a href="video.html" class="menu_a">Video</a></li>
+		<li class="menu_li"><a href="formularios.html" class="menu_a">Formularios</a></li>
+	</ol>
+</nav>
+	
+	
+<main>
+  <section>
+    <h2>Tabla desde código</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore reprehenderit aperiam consectetur voluptate dolores culpa sequi quam harum quo neque! Beatae optio molestias voluptatem enim, perferendis ipsum error cum expedita adipisci quae! Laboriosam rem quisquam esse sunt ipsum mollitia totam possimus, quam aut enim odio facere, facilis officiis corrupti quibusdam.</p>
+	  <table border="1" id="tabla_1">
+		  <thead>
+			  <tr>
+				  <th>Nombre</th>
+				  <th>Taller</th>
+				  <th>e-mail</th>
+				  <th>Cuota</th>
+			  </tr>
+		  </thead>
+		  <tbody>
+			<tr>
+				<td>Brandon Sánchez</td>
+				<td>Pintura</td>
+				<td>brandon@gmail.com</td>
+				<td>$900</td>
+			</tr>
+			<tr>
+				<td>Laura López</td>
+				<td>Escultura</td>
+				<td>Laura@gmail.com</td>
+				<td>$600</td>
+			</tr>
+			<tr>
+				<td>Eduardo Pérez</td>
+				<td>Dibujo</td>
+				<td>eduardo@gmail.com</td>
+				<td>$1300</td>
+			</tr>
+		  </tbody>
+		   <tfoot>
+			 <tr>
+				<td></td>
+				<td></td>
+				<td>TOTAL</td>
+				<td>$2800</td>
+			 </tr>
+		   </tfoot>
+	  </table>
+    </section>
+	
+	
+  <section>
+    <h2>Tabla con estílo CSS y uso de Rowspan</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore reprehenderit aperiam consectetur voluptate dolores culpa sequi quam harum quo neque! Beatae optio molestias voluptatem enim, perferendis ipsum error cum expedita adipisci quae! Laboriosam rem quisquam esse sunt ipsum mollitia totam possimus, quam aut enim odio facere, facilis officiis corrupti quibusdam.</p>
+    <table id="tabla_2">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Taller</th>
+          <th>e-mail</th>
+          <th>Cuota</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brandon Sánchez</td>
+          <td>Pintura</td>
+          <td>brandon@gmail.com</td>
+          <td>$900</td>
+        </tr>
+        <tr>
+          <td>Laura López</td>
+          <td>Escultura</td>
+          <td>Laura@gmail.com</td>
+          <td>$600</td>
+        </tr>
+        <tr>
+          <td>Eduardo Pérez</td>
+          <td>Dibujo</td>
+          <td>eduardo@gmail.com</td>
+          <td>$1300</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+<!--          <td></td>
+          <td></td>-->
+          <td colspan="3" style="background-color: #359685; font-weight: bold; color: #D9F1F9">TOTAL DE INSCRIPCIÓN</td>
+          <td>$2800</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+	
+	
+  <section>
+    <h2>Tabla con cebra en horizontal o fila</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore reprehenderit aperiam consectetur voluptate dolores culpa sequi quam harum quo neque! Beatae optio molestias voluptatem enim, perferendis ipsum error cum expedita adipisci quae! Laboriosam rem quisquam esse sunt ipsum mollitia totam possimus, quam aut enim odio facere, facilis officiis corrupti quibusdam.</p>
+    <table width="80%" border="1" cellspacing="5" id="tabla_3">
+	  <thead>
+	    <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo electrónico</th>
+          <th scope="col">Teléfono</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Deporte</th>
+        </tr>	  
+	  </thead>
+      <tbody>
+        <tr>
+          <td>Brandon Sánchez</td>
+          <td>brandon@gmail.com</td>
+          <td>22654756</td>
+          <td>23</td>
+          <td>Basquet</td>
+        </tr>
+        <tr>
+          <td>Luis Cano</td>
+          <td>luis@gmail.com</td>
+          <td>22768756</td>
+          <td>22</td>
+          <td>Fut</td>
+        </tr>
+        <tr>
+          <td>Emiliano Juárez</td>
+          <td>emi@gmail.com</td>
+          <td>22658467</td>
+          <td>18</td>
+          <td>Volei</td>
+        </tr>
+        <tr>
+          <td>Lisa</td>
+          <td>lis@gmail.com</td>
+          <td>22549856</td>
+          <td>12</td>
+          <td>Fut</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Tabla con cebra en vertical o columna</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore reprehenderit aperiam consectetur voluptate dolores culpa sequi quam harum quo neque! Beatae optio molestias voluptatem enim, perferendis ipsum error cum expedita adipisci quae! Laboriosam rem quisquam esse sunt ipsum mollitia totam possimus, quam aut enim odio facere, facilis officiis corrupti quibusdam.</p>
+    <table width="80%" border="1" cellspacing="5" id="tabla_4">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo electrónico</th>
+          <th scope="col">Teléfono</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Deporte</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brandon Sánchez</td>
+          <td>brandon@gmail.com</td>
+          <td>22654756</td>
+          <td>23</td>
+          <td>Basquet</td>
+        </tr>
+        <tr>
+          <td>Luis Cano</td>
+          <td>luis@gmail.com</td>
+          <td>22768756</td>
+          <td>22</td>
+          <td>Fut</td>
+        </tr>
+        <tr>
+          <td>Emiliano Juárez</td>
+          <td>emi@gmail.com</td>
+          <td>22658467</td>
+          <td>18</td>
+          <td>Volei</td>
+        </tr>
+        <tr>
+          <td>Lisa</td>
+          <td>lis@gmail.com</td>
+          <td>22549856</td>
+          <td>12</td>
+          <td>Fut</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Tabla flotante (hover) </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore reprehenderit aperiam consectetur voluptate dolores culpa sequi quam harum quo neque! Beatae optio molestias voluptatem enim, perferendis ipsum error cum expedita adipisci quae! Laboriosam rem quisquam esse sunt ipsum mollitia totam possimus, quam aut enim odio facere, facilis officiis corrupti quibusdam.</p>
+    <table width="100%" border="1" cellspacing="5" id="tabla_5">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo electrónico</th>
+          <th scope="col">Teléfono</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Deporte</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brandon Sánchez</td>
+          <td>brandon@gmail.com</td>
+          <td>22654756</td>
+          <td>23</td>
+          <td>Basquet</td>
+        </tr>
+        <tr>
+          <td>Luis Cano</td>
+          <td>luis@gmail.com</td>
+          <td>22768756</td>
+          <td>22</td>
+          <td>Fut</td>
+        </tr>
+        <tr>
+          <td>Emiliano Juárez</td>
+          <td>emi@gmail.com</td>
+          <td>22658467</td>
+          <td>18</td>
+          <td>Volei</td>
+        </tr>
+        <tr>
+          <td>Lisa</td>
+          <td>lis@gmail.com</td>
+          <td>22549856</td>
+          <td>12</td>
+          <td>Fut</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Tabla receptiva</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quam eos accusamus quod obcaecati, aliquam libero laborum sequi unde sint aspernatur odit quos tempore vitae veniam quaerat hic natus dolores illo deleniti, fugit reprehenderit non! Quod, quibusdam iste facere quidem!</p>
+    <div id="tabla_receptiva">
+      <table border="1" cellspacing="5" id="tabla_6">
+        <tbody>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+          </tr>
+          <tr>
+            <td>Julia</td>
+            <td>10</td>
+            <td>40</td>
+            <td>70</td>
+            <td>60</td>
+            <td>60</td>
+            <td>60</td>
+            <td>60</td>
+            <td>60</td>
+            <td>20</td>
+            <td>40</td>
+            <td>20</td>
+            <td>10</td>
+            <td>30</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Mario</td>
+            <td>40</td>
+            <td>40</td>
+            <td>20</td>
+            <td>60</td>
+            <td>50</td>
+            <td>70</td>
+            <td>10</td>
+            <td>30</td>
+            <td>50</td>
+            <td>90</td>
+            <td>30</td>
+            <td>10</td>
+            <td>60</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>Mariana</td>
+            <td>60</td>
+            <td>80</td>
+            <td>90</td>
+            <td>90</td>
+            <td>30</td>
+            <td>10</td>
+            <td>70</td>
+            <td>80</td>
+            <td>20</td>
+            <td>50</td>
+            <td>70</td>
+            <td>40</td>
+            <td>70</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>Karla</td>
+            <td>90</td>
+            <td>80</td>
+            <td>50</td>
+            <td>90</td>
+            <td>10</td>
+            <td>70</td>
+            <td>90</td>
+            <td>30</td>
+            <td>20</td>
+            <td>80</td>
+            <td>10</td>
+            <td>50</td>
+            <td>70</td>
+            <td>90</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</section>
+</main>
+<footer>
+  <h6>Elaborado por: Brandon Sánchez Torres</h6>
+</footer>
+</body>
+</html>
